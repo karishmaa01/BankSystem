@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BankSystem</name>
+    </assembly>
+    <members>
+        <member name="M:BankSystem.Controllers.AmountTransferController.GetAllTransactions">
+            <summary>
+            This method is for Get All AmountTransfer
+            </summary>
+            <response code="200">Returns a list of Amount Transactions.</response>
+        </member>
+        <member name="M:BankSystem.Controllers.AmountTransferController.GetLastTransactionAsync(System.Int32)">
+            <summary>
+            This method is for Get Recent AmountTransfer
+            </summary>
+            <param name="AccountNumber"></param>
+            <response code="200">Returns a list of Recent Amount Transactions.</response>
+        </member>
+        <member name="M:BankSystem.Controllers.AmountTransferController.Transfer(BankSystem.DTO.ATDto,BankSystem.Domain.Enum.TransType)">
+            <summary>
+            This method is to create AmountTransfer
+            </summary>
+            <param name="atdto"></param>
+            <param name="type"></param>
+            <response code="200">Returns a Amount Transactions.</response>
+        </member>
+        <member name="M:BankSystem.Controllers.AmountTransferController.GetByDate(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            This method is for Get by date AmountTransfer
+            </summary>
+            <param name="AccountNumber"></param>
+            <param name="Fromdate"></param>
+            <param name="Todate"></param>
+            <response code="200">Returns a List of Date Amount Transactions.</response>
+        </member>
+        <member name="M:BankSystem.Controllers.CustomerController.GetCustomers">
+            <summary>
+            This method is for GetAllCustomer
+            </summary>
+            <response code="200">Returns a list of customer.</response>
+        </member>
+        <member name="M:BankSystem.Controllers.CustomerController.GetCustomer(System.Int32)">
+            <summary>
+            This method is for Get Customer By ID
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns a list of customer by ID.</response>
+        </member>
+        <member name="M:BankSystem.Controllers.CustomerController.PostCustomer(BankSystem.Domain.Model.Customer)">
+            <summary>
+            This method ids for Create a new Customer
+            </summary>
+            <param name="customer"></param>
+            <response code="200">create a customer.</response>
+        </member>
+        <member name="M:BankSystem.Controllers.CustomerController.DeleteCustomer(System.Int32)">
+            <summary>
+            This method is used to Delete Customer
+            </summary>
+            <param name="id"></param>
+            <response code="200">Delete the particular customer.</response>
+        </member>
+        <member name="M:BankSystem.Controllers.CustomerController.UpdateCustomer(BankSystem.Domain.Model.Customer,System.Int32)">
+            <summary>
+            This method is used to Update Customer
+            </summary>
+            <param name="customer"></param>
+            <response code="200">Update the particular customer.</response>
+        </member>
+        <member name="M:BankSystem.Controllers.TransactionDetController.GetAllTransactions">
+            <summary>
+            This method is used to Get a transaction for particular customer
+            </summary>
+            <param name="CustomerId"></param>
+            <response code="200">Shows all Transaction.</response>
+        </member>
+        <member name="M:BankSystem.Controllers.TransactionDetController.GetLastTransactionAsync(System.Int32)">
+            <summary>
+            This method is to Get last 5 Transaction
+            </summary>
+            <param name="customerId"></param>
+            <response code="200">Shows Last 5 Transaction.</response>
+        </member>
+        <member name="M:BankSystem.Controllers.TransactionDetController.Balance(BankSystem.DTO.TransactionDto,BankSystem.Domain.Enum.PaymentType)">
+            <summary>
+            This method is used to Do transaction
+            </summary>
+            <param name="tdetails"></param>
+            <param name="type"></param>
+            <response code="200">Do Transaction for particular ID.</response>
+        </member>
+        <member name="M:BankSystem.Controllers.TransactionDetController.GetByDate(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            This method is to Get transaction By Date
+            </summary>
+            <param name="Id"></param>
+            <param name="Fromdate"></param>
+            <param name="Todate"></param>
+            <response code="200">Get Transaction By Date.</response>
+        </member>
+        <member name="M:BankSystem.Controllers.TransactionDetController.GetTransactionByIdAsync(System.Int32)">
+            <summary>
+             This method is to Get transaction By ID
+            </summary>
+            <param name="AccountNumber"></param>
+            <response code="200">Shows id Transaction.</response>
+        </member>
+    </members>
+</doc>
